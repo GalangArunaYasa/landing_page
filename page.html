@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .text {
+            color: white;
+            text-shadow: 2px 2px 10px gold;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .info,
+        .button {
+            background-color: white;
+            color: black;
+            border-radius: 20px;
+            box-shadow: 2px 2px 10px gold;
+            padding: 20px;
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            justify-content: center;
+            margin-top: 2rem;
+            /* display: flex; */
+            align-items: center;
+            cursor: pointer;
+            border: none;
+            transition: 0.6s;
+        }
+
+        .info:hover,
+        .button:hover {
+            background-color: burlywood;
+            color: white;
+            transform: translateY(-10px);
+        }
+
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(188, 185, 185);
+            border-radius: 20px;
+            padding: 20px;
+            margin-top: 20%;
+        }
+    </style>
+    <!-- Tambahkan di dalam <head> atau sebelum </body> -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text">Page Ini dalam Pengembangan 😇</h1>
+        <a href="index.html" class="button" onclick="kee">Kembali</a>
+        <button class="info" onclick="tampil()">keterangan</button>
+    </div>
+    <script>
+        function tampil() {
+            Swal.fire({
+                title: 'Im Sorry!',
+                text: 'Website Ini Masih Statis Jadi Belum Banyak Perkembangan.',
+                icon: 'info',
+                confirmButtonText: 'OK'
+            });
+        }
+    </script>
+</body>
+
+</html>
